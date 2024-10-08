@@ -13,7 +13,7 @@ async function bootstrap(): Promise<void> {
     }),
   );
   app.enableCors({
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', 'https://client-kuepa-sx2b.vercel.app'],
   });
 
   const port = process.env.PORT || 3009;
