@@ -52,7 +52,7 @@ export class AuthController {
   // }
 
   @Get('profile')
-  @Auth(Role.ADMIN)
+  @Auth(Role.ESTUDIENTE)
   profile(@ActiveUser() user: ActiveUserInterface) {
     console.log('first');
     return this.authService.profile(user);

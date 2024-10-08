@@ -12,7 +12,10 @@ async function bootstrap(): Promise<void> {
       transform: true,
     }),
   );
-  app.enableCors();
+  app.enableCors({
+    origin: ['http://localhost:3000'],
+  });
+
   const port = process.env.PORT || 3009;
   await app.listen(port);
   console.log(`La aplicación se está ejecutando en: http://localhost:${port}`);

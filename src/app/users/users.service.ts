@@ -45,15 +45,15 @@ export class UsersService {
     if (user) {
       let newRole: Role;
       switch (role) {
-        case Role.USER:
-          newRole = Role.USER;
+        case Role.ESTUDIENTE:
+          newRole = Role.ESTUDIENTE;
           break;
         case Role.ADMIN:
           newRole = Role.ADMIN;
 
           break;
-        case Role.DEVELOPER:
-          newRole = Role.DEVELOPER;
+        case Role.MODERADOR:
+          newRole = Role.MODERADOR;
           break;
         default:
           throw new Error('Invalid role');
