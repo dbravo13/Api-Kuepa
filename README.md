@@ -29,9 +29,11 @@
 ## Installation
 
 ```bash
-$ pnpm install
+$ npm install
 ```
-
+```bash
+$ docker compose up -d
+```
 ## Running the app
 
 ```bash
