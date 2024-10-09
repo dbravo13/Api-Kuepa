@@ -15,16 +15,17 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Post('messages')
-  async messages(
-    @Body('username') username: string,
-    @Body('message') message: string,
-  ) {
-    await this.pusherService.trigger('chat', 'message', {
-      username,
-      message,
-    });
+  // @Post('messages')
+  // async messages(
+  //   @Body('username') username: string,
+  //   @Body('message') message: string,
+  // ) {
+  //   console.log('xs');
+  //   await this.pusherService.trigger('chat', 'message', {
+  //     username,
+  //     message,
+  //   });
 
-    return [];
-  }
+  //   return [];
+  // }
 }

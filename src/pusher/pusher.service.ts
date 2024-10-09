@@ -3,7 +3,7 @@ import * as Pusher from 'pusher';
 
 @Injectable()
 export class PusherService {
-  pusher: Pusher;
+  private pusher: Pusher;
   constructor() {
     this.pusher = new Pusher({
       appId: '1877266',

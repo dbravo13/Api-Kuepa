@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { PusherService } from 'src/pusher/pusher.service';
+import { MessagesModule } from 'src/messages/messages.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { PusherService } from 'src/pusher/pusher.service';
     }),
     UsersModule,
     AuthModule,
+    MessagesModule,
   ],
   controllers: [AppController],
   providers: [AppService, PusherService],
